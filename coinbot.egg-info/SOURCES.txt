@@ -1,7 +1,0 @@
-README.md
-setup.py
-coinbot.egg-info/PKG-INFO
-coinbot.egg-info/SOURCES.txt
-coinbot.egg-info/dependency_links.txt
-coinbot.egg-info/entry_points.txt
-coinbot.egg-info/top_level.txt

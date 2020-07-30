@@ -1,3 +1,0 @@
-[console_scripts]
-coinbot = coinbot.__main__:main
-
