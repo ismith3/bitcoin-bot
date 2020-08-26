@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  background: rgb(10,10,10);
+  padding: 10px 20px 6px;
+}
+
+h2 {
+  padding: 0;
+  color: rgb(210,210,210);
+}
