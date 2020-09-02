@@ -20,11 +20,12 @@ class App extends React.Component {
   }
 
   OpenWSConnection(app, updatePrice) {
-    let socket = new WebSocket(base_ws_url);
+    let socket = new WebSocket(ws_url, 'btc-protocol');
   
-    socket.onopen = function(e) {
-      socket.send(JSON.stringify(ticker_subscribe_msg));
-    }
+
+    // socket.onopen = function(e) {
+    //   socket.send(JSON.stringify(ticker_subscribe_msg));
+    // }
   
     socket.onmessage = function(event) {
       let data = JSON.parse(event.data);
@@ -33,9 +34,9 @@ class App extends React.Component {
       }
     }
   
-    socket.onerror = function(err) {
-      alert(`Error: ${err.message}`);
-    }
+    // socket.onerror = function(err) {
+    //   alert(`Error: ${err.message}`);
+    // }
   }
   
   render() {
@@ -57,7 +58,7 @@ class App extends React.Component {
   }
 }
 
-const base_ws_url = 'wss://ws-feed.pro.coinbase.com';
+const ws_url = 'ws://localhost:8080';
 
 const ticker_subscribe_msg = {
   "type": "subscribe",
