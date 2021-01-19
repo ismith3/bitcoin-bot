@@ -11,10 +11,6 @@ class Controller extends React.Component {
     this.handleStrategyChange = this.handleStrategyChange.bind(this);
   }
 
-  componentWillMount() {
-    
-  }
-
   handleStrategyChange(event) {
     let newValue;
     if(event.target.value === '-- Select Strategy --') {
